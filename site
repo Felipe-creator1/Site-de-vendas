@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consultora Pamela — Realme direto de Marabá, parcelado no boleto</title>
+<meta name="description" content="Realme C85, P4 Lite e C100x com a Consultora Pamela em Marabá-PA. Parcele em até 18x no boleto, sem consulta ao SPC e Serasa. Atendimento 24 horas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a1420;
+    --bg-soft:#0f2032;
+    --bg-soft-2:#12283e;
+    --card:#102436;
+    --line: rgba(238,244,245,0.10);
+    --text:#eef4f5;
+    --text-dim:#9db4c4;
+    --text-dim-2:#6d8697;
+    --amber:#ff6a3d;
+    --amber-2:#ff9a5a;
+    --lilac:#3fd6d6;
+    --lilac-2:#1fa8b8;
+    --whatsapp:#25D366;
+    --whatsapp-dark:#1ea952;
+    --display:'Space Grotesk', sans-serif;
+    --body:'Inter', sans-serif;
+    --mono:'Space Mono', monospace;
+    --radius: 20px;
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--body);
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  ul{list-style:none;}
+  section{position:relative;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+  .eyebrow{
+    font-family:var(--mono);
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    font-size:12.5px;
+    color:var(--amber);
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:18px;height:1px;
+    background:var(--amber);
+    display:inline-block;
+  }
+  h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.08;letter-spacing:-0.01em;}
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    padding:15px 26px;
+    border-radius:100px;
+    font-family:var(--body);
+    font-weight:600;
+    font-size:15px;
+    cursor:pointer;
+    border:1px solid transparent;
+    transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+    white-space:nowrap;
+  }
+  .btn:active{transform:scale(.97);}
+  .btn-primary{
+    background:linear-gradient(135deg, var(--whatsapp), var(--whatsapp-dark));
+    color:#082013;
+    box-shadow:0 10px 30px -8px rgba(37,211,102,.55);
+  }
+  .btn-primary:hover{box-shadow:0 14px 34px -8px rgba(37,211,102,.7); transform:translateY(-2px);}
+  .btn-ghost{
+    background:transparent;
+    color:var(--text);
+    border:1px solid var(--line);
+  }
+  .btn-ghost:hover{border-color:rgba(245,241,232,.35); background:rgba(245,241,232,.04);}
+  .btn svg{width:18px;height:18px;flex-shrink:0;}
+
+  /* ---------- NAV ---------- */
+  header.nav{
+    position:fixed; top:0; left:0; right:0; z-index:200;
+    backdrop-filter: blur(14px);
+    background:rgba(10,20,32,.72);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    max-width:1180px;margin:0 auto;padding:16px 24px;
+    display:flex;align-items:center;justify-content:space-between;
+  }
+  .logo{
+    font-family:var(--display);
+    font-weight:700;font-size:19px;
+    display:flex;align-items:center;gap:9px;
+  }
+  .logo .dot{width:9px;height:9px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 4px rgba(255,106,61,.18);}
+  nav.links{display:flex;gap:34px;align-items:center;}
+  nav.links a{
+    font-size:14.5px;font-weight:500;color:var(--text-dim);
+    transition:color .15s ease;
+    position:relative;
+  }
+  nav.links a:hover{color:var(--text);}
+  .nav-cta{display:flex;align-items:center;gap:16px;}
+  .nav-cta .btn{padding:11px 20px;font-size:14px;}
+  .burger{display:none;background:none;border:0;color:var(--text);cursor:pointer;padding:6px;}
+  .burger svg{width:26px;height:26px;}
+
+  @media (max-width:880px){
+    nav.links{
+      position:fixed;top:64px;left:0;right:0;
+      background:var(--bg-soft);
+      flex-direction:column;
+      padding:22px 24px 28px;
+      gap:20px;
+      border-bottom:1px solid var(--line);
+      transform:translateY(-130%);
+      opacity:0;
+      transition:transform .3s ease, opacity .3s ease;
+    }
+    nav.links.open{transform:translateY(0);opacity:1;}
+    nav.links a{font-size:16px;}
+    .burger{display:block;}
+    .nav-cta .btn-ghost{display:none;}
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    padding:150px 0 0;
+    background:
+      radial-gradient(ellipse 60% 50% at 18% 0%, rgba(63,214,214,.18), transparent 60%),
+      radial-gradient(ellipse 55% 45% at 88% 15%, rgba(255,106,61,.16), transparent 60%),
+      var(--bg);
+    overflow:hidden;
+  }
+  .hero-inner{
+    max-width:1180px;margin:0 auto;padding:0 24px 70px;
+    display:grid;
+    gap:26px;
+    text-align:center;
+    justify-items:center;
+  }
+  .hero h1{
+    font-size:clamp(34px, 6vw, 66px);
+    max-width:920px;
+  }
+  .hero h1 em{
+    font-style:normal;
+    background:linear-gradient(90deg, var(--amber), var(--lilac));
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+  }
+  .hero p.lead{
+    font-size:clamp(16px,2vw,19px);
+    color:var(--text-dim);
+    max-width:600px;
+  }
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:6px;}
+  .trust-row{
+    display:flex;gap:10px;flex-wrap:wrap;justify-content:center;
+    margin-top:8px;
+  }
+  .trust-pill{
+    font-family:var(--mono);
+    font-size:12px;
+    letter-spacing:.03em;
+    color:var(--text-dim);
+    border:1px solid var(--line);
+    padding:8px 14px;
+    border-radius:100px;
+    background:rgba(245,241,232,.03);
+  }
+  .trust-pill b{color:var(--amber);font-weight:700;}
+
+  /* marquee of phones */
+  .marquee-region{
+    margin-top:56px;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  }
+  .marquee-track{
+    display:flex;
+    gap:20px;
+    width:max-content;
+    animation:scroll-left 34s linear infinite;
+  }
+  .marquee-track img{
+    height:300px;
+    width:auto;
+    border-radius:16px;
+    border:1px solid var(--line);
+    object-fit:cover;
+    filter:saturate(1.05);
+  }
+  @keyframes scroll-left{
+    from{transform:translateX(0);}
+    to{transform:translateX(-50%);}
+  }
+  @media (max-width:640px){
+    .marquee-track img{height:190px;}
+  }
+
+  /* ---------- TICKER STRIP ---------- */
+  .ticker{
+    background:var(--amber);
+    transform:rotate(-1.2deg);
+    margin:-30px 0 0;
+    position:relative;
+    z-index:5;
+    overflow:hidden;
+    border-top:1px solid rgba(0,0,0,.15);
+    border-bottom:1px solid rgba(0,0,0,.15);
+  }
+  .ticker-track{
+    display:flex;
+    width:max-content;
+    animation:scroll-left 26s linear infinite;
+    padding:13px 0;
+  }
+  .ticker-track span{
+    font-family:var(--mono);
+    font-weight:700;
+    font-size:15px;
+    letter-spacing:.03em;
+    color:#2a0e05;
+    padding:0 22px;
+    white-space:nowrap;
+    display:flex;
+    align-items:center;
+    gap:22px;
+  }
+
+  /* ---------- PARCELAMENTO / TICKET ---------- */
+  .parcelamento{
+    padding:140px 0 110px;
+    background:var(--bg);
+    text-align:center;
+  }
+  .parcelamento .head{margin-bottom:44px;}
+  .parcelamento h2{
+    font-size:clamp(26px,3.4vw,38px);
+    margin-top:14px;
+    max-width:720px;
+    margin-left:auto;margin-right:auto;
+  }
+
+  .boleto{
+    position:relative;
+    max-width:900px;
+    margin:0 auto;
+    background:linear-gradient(155deg, var(--bg-soft-2), var(--bg-soft));
+    border:1px solid var(--line);
+    border-radius:26px;
+    padding:56px 48px 44px;
+    box-shadow:0 40px 80px -30px rgba(0,0,0,.6);
+  }
+  .boleto::before, .boleto::after{
+    content:"";
+    position:absolute;
+    top:50%;
+    width:44px;height:44px;
+    background:var(--bg);
+    border-radius:50%;
+    transform:translateY(-50%);
+  }
+  .boleto::before{left:-22px;}
+  .boleto::after{right:-22px;}
+  .boleto .perf{
+    position:absolute;
+    left:40px; right:40px; top:0;
+    border-top:2px dashed rgba(238,244,245,.18);
+  }
+  .boleto-claim{
+    font-family:var(--display);
+    font-weight:700;
+    font-size:clamp(24px, 4.4vw, 46px);
+    line-height:1.15;
+    background:linear-gradient(90deg, var(--amber), var(--lilac), var(--amber));
+    background-size:200% auto;
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    animation:shine 5s linear infinite;
+  }
+  @keyframes shine{
+    0%{background-position:0% center;}
+    100%{background-position:200% center;}
+  }
+  .boleto-sub{
+    margin-top:16px;
+    color:var(--text-dim);
+    font-size:16px;
+    max-width:560px;
+    margin-left:auto;margin-right:auto;
+  }
+  .boleto-barcode{
+    margin:34px auto 0;
+    height:46px;
+    max-width:520px;
+    background: repeating-linear-gradient(90deg,
+      var(--text) 0 3px, transparent 3px 6px,
+      var(--text) 6px 11px, transparent 11px 15px,
+      var(--text) 15px 17px, transparent 17px 23px,
+      var(--text) 23px 27px, transparent 27px 30px);
+    opacity:.85;
+    border-radius:3px;
+  }
+  .boleto-stats{
+    margin-top:38px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+    padding-top:34px;
+    border-top:1px dashed rgba(238,244,245,.18);
+    text-align:left;
+  }
+  .boleto-stats .stat b{
+    display:block;
+    font-family:var(--mono);
+    font-size:11.5px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--text-dim-2);
+    margin-bottom:6px;
+  }
+  .boleto-stats .stat span{
+    font-family:var(--display);
+    font-weight:700;
+    font-size:20px;
+    color:var(--text);
+  }
+  .boleto-cta{margin-top:38px;}
+  @media (max-width:640px){
+    .boleto{padding:44px 22px 34px;}
+    .boleto-stats{grid-template-columns:1fr;gap:20px;text-align:center;}
+  }
+
+  /* ---------- PRODUCTS ---------- */
+  .products{padding:120px 0 100px;background:var(--bg-soft);}
+  .section-head{
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    gap:20px;
+    margin-bottom:50px;
+    flex-wrap:wrap;
+  }
+  .section-head h2{font-size:clamp(28px,4vw,42px);margin-top:12px;max-width:560px;}
+  .section-head p{color:var(--text-dim);max-width:380px;font-size:15px;}
+
+  .product-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:26px;
+  }
+  @media (max-width:980px){.product-grid{grid-template-columns:1fr 1fr;}}
+  @media (max-width:680px){.product-grid{grid-template-columns:1fr;}}
+
+  .product-card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    transition:transform .25s ease, border-color .25s ease;
+  }
+  .product-card:hover{transform:translateY(-6px); border-color:rgba(255,106,61,.35);}
+  .product-media{
+    background:radial-gradient(ellipse at 50% 30%, rgba(255,255,255,.06), transparent 70%);
+    padding:26px 26px 0;
+    position:relative;
+  }
+  .product-media img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    object-position:top center;
+    border-radius:14px;
+  }
+  .product-tag{
+    position:absolute;top:38px;left:38px;
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    background:rgba(10,20,32,.72);
+    backdrop-filter:blur(6px);
+    border:1px solid rgba(238,244,245,.16);
+    padding:6px 12px;
+    border-radius:100px;
+    color:var(--amber);
+  }
+  .color-strip{
+    display:flex;
+    gap:10px;
+    padding:14px 26px 0;
+  }
+  .color-strip .swatch{
+    flex:1;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:12px;
+    color:var(--text-dim);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:6px 8px;
+    overflow:hidden;
+  }
+  .color-strip img{width:34px;height:34px;object-fit:cover;border-radius:8px;flex-shrink:0;}
+  .product-body{padding:22px 26px 28px;display:flex;flex-direction:column;gap:16px;flex:1;}
+  .product-body h3{font-size:22px;}
+  .product-body .specs{display:flex;flex-direction:column;gap:9px;}
+  .product-body .specs li{
+    display:flex;
+    gap:10px;
+    font-size:14px;
+    color:var(--text-dim);
+    align-items:flex-start;
+  }
+  .product-body .specs li svg{width:16px;height:16px;flex-shrink:0;margin-top:2px;color:var(--amber);}
+  .product-foot{
+    margin-top:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    padding-top:6px;
+  }
+  .product-foot .btn{width:100%;padding:13px 18px;font-size:14px;}
+
+  /* ---------- GALLERY ---------- */
+  .gallery{padding:120px 0 100px;background:var(--bg);}
+  .gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-auto-rows:170px;
+    gap:12px;
+  }
+  .gallery-grid button{
+    border:0;padding:0;background:none;cursor:zoom-in;
+    border-radius:14px;overflow:hidden;
+    position:relative;
+    display:block;
+  }
+  .gallery-grid img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease;}
+  .gallery-grid button:hover img{transform:scale(1.08);}
+  .gallery-grid .g-wide{grid-column:span 2;grid-row:span 2;}
+  @media (max-width:900px){
+    .gallery-grid{grid-template-columns:repeat(3,1fr);grid-auto-rows:130px;}
+  }
+  @media (max-width:600px){
+    .gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px;}
+    .gallery-grid .g-wide{grid-column:span 2;grid-row:span 1;}
+  }
+
+  .lightbox{
+    position:fixed;inset:0;z-index:400;
+    background:rgba(5,10,16,.92);
+    display:none;
+    align-items:center;justify-content:center;
+    padding:40px 20px;
+  }
+  .lightbox.open{display:flex;}
+  .lightbox img{max-width:min(600px,90vw);max-height:82vh;border-radius:14px;box-shadow:0 30px 80px rgba(0,0,0,.6);}
+  .lightbox-close{
+    position:absolute;top:24px;right:24px;
+    width:42px;height:42px;border-radius:50%;
+    background:rgba(238,244,245,.08);
+    border:1px solid var(--line);
+    color:var(--text);
+    display:flex;align-items:center;justify-content:center;
+    cursor:pointer;
+  }
+  .lightbox-close svg{width:20px;height:20px;}
+
+  /* ---------- CONTACT ---------- */
+  .contact{
+    padding:120px 0 90px;
+    background:linear-gradient(180deg, var(--bg-soft), var(--bg));
+  }
+  .contact-box{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:28px;
+    padding:60px;
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:50px;
+    align-items:center;
+  }
+  .contact-box h2{font-size:clamp(26px,3.6vw,40px);margin-top:14px;}
+  .contact-box p.lead{color:var(--text-dim);margin-top:14px;max-width:440px;font-size:15.5px;}
+  .contact-details{display:flex;flex-direction:column;gap:22px;}
+  .contact-item{display:flex;align-items:center;gap:16px;}
+  .contact-item .ic{
+    width:46px;height:46px;border-radius:13px;
+    background:rgba(255,106,61,.12);
+    display:flex;align-items:center;justify-content:center;
+    flex-shrink:0;
+  }
+  .contact-item .ic svg{width:22px;height:22px;color:var(--amber);}
+  .contact-item b{display:block;font-size:15.5px;}
+  .contact-item span{display:block;font-size:13.5px;color:var(--text-dim);}
+  .contact-actions{margin-top:8px;display:flex;gap:12px;flex-wrap:wrap;}
+  @media (max-width:860px){
+    .contact-box{grid-template-columns:1fr;padding:40px 26px;}
+  }
+
+  footer{
+    padding:36px 0 120px;
+    text-align:center;
+    color:var(--text-dim-2);
+    font-size:13px;
+  }
+  footer .foot-logo{font-family:var(--display);font-weight:700;color:var(--text-dim);margin-bottom:8px;}
+
+  /* ---------- FLOATING WHATSAPP ---------- */
+  .float-wa{
+    position:fixed;
+    bottom:26px;right:26px;
+    z-index:300;
+    display:flex;
+    align-items:center;
+    gap:0;
+  }
+  .float-wa .bubble{
+    width:62px;height:62px;
+    border-radius:50%;
+    background:linear-gradient(135deg, var(--whatsapp), var(--whatsapp-dark));
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 12px 30px -6px rgba(37,211,102,.6);
+    position:relative;
+    flex-shrink:0;
+  }
+  .float-wa .bubble svg{width:30px;height:30px;color:#0b1f12;}
+  .float-wa .ring{
+    position:absolute;inset:0;border-radius:50%;
+    box-shadow:0 0 0 0 rgba(37,211,102,.55);
+    animation:pulse-ring 2.2s ease-out infinite;
+  }
+  @keyframes pulse-ring{
+    0%{box-shadow:0 0 0 0 rgba(37,211,102,.55);}
+    80%{box-shadow:0 0 0 22px rgba(37,211,102,0);}
+    100%{box-shadow:0 0 0 0 rgba(37,211,102,0);}
+  }
+  .float-wa .label{
+    max-width:0;
+    overflow:hidden;
+    white-space:nowrap;
+    background:var(--card);
+    border:1px solid var(--line);
+    color:var(--text);
+    font-size:13.5px;
+    font-weight:600;
+    display:flex;align-items:center;
+    border-radius:100px;
+    transition:max-width .3s ease, padding .3s ease, margin .3s ease;
+  }
+  .float-wa:hover .label{max-width:190px;padding:0 18px 0 16px;margin-right:-24px;}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:.001s !important; animation-iteration-count:1 !important; transition-duration:.001s !important;}
+  }
+
+  @media (max-width:640px){
+    .float-wa{bottom:18px;right:18px;}
+    .float-wa .bubble{width:56px;height:56px;}
+    .float-wa .label{display:none;}
+  }
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in{opacity:1;transform:translateY(0);}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#inicio" class="logo"><span class="dot"></span>Consultora Pamela</a>
+    <nav class="links" id="navLinks">
+      <a href="#inicio">Início</a>
+      <a href="#celulares">Celulares</a>
+      <a href="#parcelamento">Parcelamento</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#contato" class="btn btn-ghost">Contato</a>
+      <a href="https://wa.me/5594974003734?text=Oi%20Pamela!%20Vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20os%20celulares." target="_blank" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39c1.44.79 3.07 1.2 4.72 1.2h.01c5.46 0 9.91-4.45 9.91-9.91C21.93 6.45 17.5 2 12.04 2zm5.77 14.06c-.24.68-1.4 1.31-1.94 1.39-.5.08-1.13.11-1.82-.11-.42-.13-.96-.3-1.65-.6-2.9-1.25-4.79-4.17-4.94-4.36-.14-.2-1.19-1.58-1.19-3.01 0-1.43.75-2.13 1.02-2.42.26-.29.58-.36.77-.36h.55c.18 0 .42-.03.65.5.24.55.81 1.9.88 2.04.07.14.11.3.02.49-.09.19-.14.3-.28.46-.14.16-.29.36-.42.48-.14.13-.28.28-.12.55.16.28.71 1.18 1.53 1.91 1.05.94 1.94 1.24 2.21 1.38.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.18-.28.36-.23.61-.14.24.09 1.58.75 1.85.88.28.14.46.2.53.32.07.11.07.65-.17 1.33z"/></svg>
+        Chamar no WhatsApp
+      </a>
+    </div>
+    <button class="burger" id="burgerBtn" aria-label="Abrir menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="inicio" class="hero">
+  <div class="hero-inner">
+    <span class="eyebrow">Venda direta · Marabá e região</span>
+    <h1>Celular novo pra você, <em>sem consulta SPC E SERASA</em>.</h1>
+    <p class="lead">Escolhe o modelo com a Pamela, fecha o parcelamento no boleto e recebe rapidinho aqui em Marabá-PA. Sem consulta ao SPC, sem consulta à Serasa, sem burocracia de banco.</p>
+    <div class="hero-actions">
+      <a href="#celulares" class="btn btn-primary" style="background:linear-gradient(135deg,var(--amber),var(--amber-2));color:#2a0e05;box-shadow:0 10px 30px -8px rgba(255,106,61,.5);">Ver os modelos</a>
+      <a href="https://wa.me/5594974003734?text=Oi%20Pamela!%20Quero%20falar%20sobre%20um%20celular." target="_blank" class="btn btn-ghost">Chamar a Pamela agora</a>
+    </div>
+    <div class="trust-row">
+      <span class="trust-pill">Parcela em até <b>18x</b> no boleto</span>
+      <span class="trust-pill"><b>Sem</b> consulta SPC/Serasa</span>
+      <span class="trust-pill">Atendimento <b>24 horas</b></span>
+    </div>
+  </div>
+  <div class="marquee-region">
+    <div class="marquee-track" id="marqueeTrack"></div>
+  </div>
+</section>
+
+<div class="ticker">
+  <div class="ticker-track" id="tickerTrack"></div>
+</div>
+
+<!-- PRODUTOS -->
+<section id="celulares" class="products">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Modelos disponíveis</span>
+        <h2>Três realme, um jeito só de levar: fácil.</h2>
+      </div>
+      <p>Estoque muda toda semana. Se o modelo que você quer não tiver aqui, chama no WhatsApp que a Pamela confirma na hora.</p>
+    </div>
+
+    <div class="product-grid">
+
+      <!-- C85 -->
+      <div class="product-card reveal">
+        <div class="product-media">
+          <span class="product-tag">à prova d'água</span>
+          <img src="img/IMG-20260821-WA0161.jpg" alt="realme C85 5G">
+        </div>
+        <div class="product-body">
+          <h3>realme C85 5G</h3>
+          <ul class="specs">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Resistência à água IP69 Pro — chuva ou respingo não é problema</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Rede 5G com NFC pra pagar por aproximação</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Inteligência Ai integrada de fábrica</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Cores disponíveis: Azul e Preto</li>
+          </ul>
+          <div class="product-foot">
+            <a href="https://wa.me/5594974003734?text=Oi%20Pamela!%20Quero%20saber%20mais%20sobre%20o%20realme%20C85%205G." target="_blank" class="btn btn-primary">Falar sobre o C85</a>
+          </div>
+        </div>
+      </div>
+
+      
+      <!-- P4 power -->
+      <div class="product-card reveal">
+        <div class="product-media">
+          <span class="product-tag">144 Hz</span>
+          <img src="img/P4-Power.jpg" alt="P4 power">
+        </div>
+        <div class="product-body">
+          <h3>P4 power</h3>
+          <ul class="specs">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> AMOLED</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>SoC: MediaTek Dimensity 7400 Ultra (8 núcleos, até 2,6 GHz)</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Câmera Principal: 50 MP, sensor Sony IMX882, estabilização óptica (OIS)</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Bateria 10.001 mAh</li>
+          </ul>
+          <div class="product-foot">
+            <a href="https://wa.me/5594974003734?text=Oi%20Pamela!%20Quero%20saber%20mais%20sobre%20o%20P4%20Power%20." target="_blank" class="btn btn-primary">Falar sobre o P4 power</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- C71 -->
+      <div class="product-card reveal">
+        <div class="product-media">
+          <span class="product-tag">1604 x 720 pixels (HD+)</span>
+          <img src="img/c71.jpeg" alt="C71">
+        </div>
+        <div class="product-body">
+          <h3>C71</h3>
+          <ul class="specs">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Tipo de tela: IPS LCD</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Tamanho: 6,67 polegadas</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Processador: Unisoc T7250 (ou Mediatek Dimensity 6300 em algumas versões)</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Bateria 6.000 mAh</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Resistência: Certificação de padrão militar, proteção contra respingos</li>
+          </ul>
+          <div class="product-foot">
+            <a href="https://wa.me/5594974003734?text=Oi%20Pamela!%20Quero%20saber%20mais%20sobre%20o%20realme%20C71%20." target="_blank" class="btn btn-primary">Falar sobre C71</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- C100i -->
+      <div class="product-card reveal">
+        <div class="product-media">
+          <span class="product-tag">120 Hz</span>
+          <img src="img/C100i.jpeg" alt="realmeC100i">
+        </div>
+        <div class="product-body">
+          <h3>realme C100i</h3>
+          <ul class="specs">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Resolução: 720 x 1.570 pixels, proporção 19,5:9, densidade ~254 ppi </li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>CPU: Octa-core (2x Cortex-A75 1,8 GHz + 6x Cortex-A55 1,6 GHz)</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Bateria 7.000 mAh</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Sistema operacional: Android 16 </li>
+          </ul>
+          <div class="product-foot">
+            <a href="https://wa.me/5594974003734?text=Oi%20Pamela!%20Quero%20saber%20mais%20sobre%20o%20realme%20C100i%20." target="_blank" class="btn btn-primary">Falar sobre o C100i</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- C75 -->
+      <div class="product-card reveal">
+        <div class="product-media">
+          <span class="product-tag"> IPS LCD</span>
+          <img src="img/c75.jpg" alt="realme C75">
+        </div>
+        <div class="product-body">
+          <h3>realme C75</h3>
+          <ul class="specs">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Tamanho: 6,72 polegadas (17,07 cm)</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 180 Hz</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Chipset: Mediatek Helio G92 Max (12 nm)</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Expansão: suporte a cartão microSD</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Certificações: IP66, IP68, IP69, MIL-STD-810H</li>
+          </ul>
+          <div class="product-foot">
+            <a href="https://wa.me/5594974003734?text=Oi%20Pamela!%20Quero%20saber%20mais%20sobre%20o%20realme%20C75%20." target="_blank" class="btn btn-primary">Falar sobre o C75</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Note 70 -->
+      <div class="product-card reveal">
+        <div class="product-media">
+          <span class="product-tag">720 x 1600 pixels (HD+)</span>
+          <img src="img/note-70.png" alt="Note 70">
+        </div>
+        <div class="product-body">
+          <h3>Note 70</h3>
+          <ul class="specs">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Taxa de atualização: 90 Hz</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Suporte a Dual SIM</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Bateria  6300 mAh</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Certificação IP54: resistência a respingos de água</li>
+          </ul>
+          <div class="product-foot">
+            <a href="https://wa.me/5594974003734?text=Oi%20Pamela!%20Quero%20saber%20mais%20sobre%20o%20Note%2070." target="_blank" class="btn btn-primary">Falar sobre o Note 70</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- C67 -->
+      <div class="product-card reveal">
+        <div class="product-media">
+          <span class="product-tag">Full HD+</span>
+          <img src="img/c67.jpg" alt="realme C67">
+        </div>
+        <div class="product-body">
+          <h3>realme C67</h3>
+          <ul class="specs">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Chipset: Qualcomm Snapdragon 685, 6 nm</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Sistema Operacional: Android 14 com Realme UI</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>108 MP principal com lente 6P, abertura f/1.75, zoom in-sensor 3x</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Bateria 5.000 mAh</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Leitor multimídia, videoconferência, suporte a dual SIM</li>
+          </ul>
+          <div class="product-foot">
+            <a href="https://wa.me/5594974003734?text=Oi%20Pamela!%20Quero%20saber%20mais%20sobre%20o%20realme%20C67%20." target="_blank" class="btn btn-primary">Falar sobre o C67</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Realme 14 Pro Plus -->
+      <div class="product-card reveal">
+        <div class="product-media">
+          <span class="product-tag">Tela: OLED Pro, curva</span>
+          <img src="img/14-pro-plus.webp" alt="Realme 14 Pro Plus">
+        </div>
+        <div class="product-body">
+          <h3>Realme 14 Pro Plus</h3>
+          <ul class="specs">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Resolução: 2800 x 1272 pixels (1.5K)</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Proteção: Corning Gorilla Glass 7i</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Sistema operacional: Android 14 com Realme UI 5.0</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Selfie: 32 MP, f/2.0, FOV 90°</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Principal: Sony IMX896, 50 MP, f/1.8, OIS, 24 mm, FOV 84°</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Vídeo: 4K@30fps, 1080P@30fps, 720P@30fps, EIS/OIS</li>
+          </ul>
+          <div class="product-foot">
+            <a href="https://wa.me/5594974003734?text=Oi%20Pamela!%20Quero%20saber%20mais%20sobre%20o%20realme%2014%20Pro Plus." target="_blank" class="btn btn-primary">Falar sobre o Realme 14 Pro Plus</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- C75x -->
+      <div class="product-card reveal">
+        <div class="product-media">
+          <span class="product-tag">Bateria 5600 mAh</span>
+          <img src="img/realme 3.jpeg" alt="realme C75x">
+        </div>
+        <div class="product-body">
+          <h3>realme C75x</h3>
+          <ul class="specs">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Resistência à água IP69 Pro — chuva ou respingo não é problema</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Helio G81 Ultra Chipset</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Tela HD+ 120Hz</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Experiência Inteligente com IA</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Rede 5G com NFC pra pagar por aproximação</li>
+          </ul>
+          <div class="product-foot">
+            <a href="https://wa.me/5594974003734?text=Oi%20Pamela!%20Quero%20saber%20mais%20sobre%20o%20realme%20C75x%20." target="_blank" class="btn btn-primary">Falar sobre o Realme C75x</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- realme 16 -->
+      <div class="product-card reveal">
+        <div class="product-media">
+          <span class="product-tag"> AMOLED de 6,57</span>
+          <img src="img/realme 1.jpeg" alt="realme 16">
+        </div>
+        <div class="product-body">
+          <h3>realme 16</h3>
+          <ul class="specs">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Resistência à água IP69 Pro — chuva ou respingo não é problema</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>MediaTek Dimensity 6400 Turbo</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>câmera Full HD a 60 fps</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Bluetooth 5.3 e NFC</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>bateria de 7.000 mAh</li>
+          </ul>
+          <div class="product-foot">
+            <a href="https://wa.me/5594974003734?text=Oi%20Pamela!%20Quero%20saber%20mais%20sobre%20o%20realme%2016%20." target="_blank" class="btn btn-primary">Falar sobre o Realme C75x</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- P4 Lite -->
+      <div class="product-card reveal">
+        <div class="product-media">
+          <span class="product-tag">bateria de 6600 mAh</span>
+          <img src="img/cinza e roxo.webp" alt="realme P4 Lite NFC">
+        </div>
+        <div class="color-strip">
+          <div class="swatch"><img src="img/IMG-20260821-WA0154.jpg" alt="Roxo Pulse">Roxo Pulse</div>
+          <div class="swatch"><img src="img/IMG-20260821-WA0153.jpg" alt="Cinza Titan">Cinza Titan</div>
+        </div>
+        
+        <div class="product-body">
+          <h3>realme P4 Lite NFC</h3>
+          <ul class="specs">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Bateria de 6600 mAh — o dia inteiro de uso sem correr atrás de tomada</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>NFC de fábrica pra pagamento por aproximação</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Duas cores: Roxo Pulse e Cinza Titan</li>
+          </ul>
+          <div class="product-foot">
+            <a href="https://wa.me/5594974003734?text=Oi%20Pamela!%20Quero%20saber%20mais%20sobre%20o%20realme%20P4%20Lite." target="_blank" class="btn btn-primary">Falar sobre o P4 Lite</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- C100x -->
+      <div class="product-card reveal">
+        <div class="product-media">
+          <span class="product-tag">bateria de 8000 mAh</span>
+          <img src="img/realme-C100x-Golden-Coast-819x1024.jpg" alt="realme C100x NFC">
+        </div>
+        <div class="product-body">
+          <h3>realme C100x NFC</h3>
+          <ul class="specs">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Bateria gigante de 8000 mAh, referência de duração no Brasil</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Proteção ArmorShell, resiste a quedas de até 2 metros</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Toque preciso mesmo com a mão molhada ou debaixo de chuva</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>NFC de fábrica</li>
+          </ul>
+          <div class="product-foot">
+            <a href="https://wa.me/5594974003734?text=Oi%20Pamela!%20Quero%20saber%20mais%20sobre%20o%20realme%20C100x." target="_blank" class="btn btn-primary">Falar sobre o C100x</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section id="galeria" class="gallery">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">Galeria</span>
+        <h2>Dá uma olhada de perto</h2>
+      </div>
+      <p>Clique numa foto pra ver maior.</p>
+    </div>
+    <div class="gallery-grid reveal" id="galleryGrid"></div>
+  </div>
+</section>
+
+<video width="300" height="360" controls>
+ <source src="img/video realme16.mp4" type="video/mp4">
+ <source src="img/video realme16.mp4" type="video/ogg">
+ Seu navegador não suporta o elemento de vídeo
+</video>
+
+<video width="300" height="360" controls>
+ <source src="img/P4 Power.mp4" type="video/mp4">
+ <source src="img/P4 Power.mp4" type="video/ogg">
+ Seu navegador não suporta o elemento de vídeo
+</video>
+
+<video width="300" height="360" controls>
+ <source src="img/Realme 14 Pro.mp4" type="video/mp4">
+ <source src="img/Realme 14 Pro.mp4" type="video/ogg">
+ Seu navegador não suporta o elemento de vídeo
+</video>
+
+<!-- PARCELAMENTO -->
+<section id="parcelamento" class="parcelamento">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Como funciona o parcelamento</span>
+    
+    </div>
+
+    <div class="boleto reveal">
+      <div class="perf"></div>
+      <p class="boleto-claim">Até 18x no boleto.<br>Sem consultar SPC. Sem consultar Serasa.</p>
+      <p class="boleto-sub">Você fala com a Pamela, escolhe o aparelho, e o boleto sai do jeito que cabe no seu bolso. Sem espera de banco, sem análise de crédito, sem enrolação.</p>
+      <div class="boleto-barcode"></div>
+      <div class="boleto-stats">
+        <div class="stat">
+          <b>Parcelas</b>
+          <span>Até 18x</span>
+        </div>
+        <div class="stat">
+          <b>Consulta ao nome</b>
+          <span>Nenhuma</span>
+        </div>
+        <div class="stat">
+          <b>CIDADE</b>
+          <span>Marabá e região</span>
+        </div>
+      </div>
+      <div class="boleto-cta">
+        <a href="https://wa.me/5594974003734?text=Oi%20Pamela!%20Quero%20simular%20o%20parcelamento%20de%20um%20celular%20no%20boleto." target="_blank" class="btn btn-primary" style="background:linear-gradient(135deg,var(--amber),var(--amber-2));color:#2a0e05;box-shadow:0 10px 30px -8px rgba(255,106,61,.5);">Simular meu parcelamento</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="contact">
+  <div class="wrap">
+    <div class="contact-box reveal">
+      <div>
+        <span class="eyebrow">Fala com a Pamela</span>
+        <h2>Manda uma mensagem, a gente resolve rápido.</h2>
+        <p class="lead">Atendimento direto pelo WhatsApp, sem robô, sem fila de espera. É a própria Pamela quem responde.</p>
+        <div class="contact-actions">
+          <a href="https://wa.me/5594974003734" target="_blank" class="btn btn-primary">Chamar no WhatsApp</a>
+          <a href="tel:+5594974003734" class="btn btn-ghost">Ligar agora</a>
+        </div>
+      </div>
+      <div class="contact-details">
+        <div class="contact-item">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+          <div><b>94 97400-3734</b><span>WhatsApp e ligação — Pamela</span></div>
+        </div>
+        <div class="contact-item">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><b>Marabá — PA</b></div>
+        </div>
+        <div class="contact-item">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+          <div><b>Aberto 24 horas</b><span>Todos os dias da semana</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-logo">Consultora Pamela</div>
+    <p>Marabá — PA · 94 97400-3734 · atendimento 24 horas</p>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLUTUANTE -->
+<a class="float-wa" href="https://wa.me/5594974003734?text=Oi%20Pamela!%20Vim%20pelo%20site%20e%20quero%20fazer%20um%20pedido." target="_blank" aria-label="Falar no WhatsApp com a Pamela">
+  <span class="label">Fala com a Pamela</span>
+  <span class="bubble">
+    <span class="ring"></span>
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39c1.44.79 3.07 1.2 4.72 1.2h.01c5.46 0 9.91-4.45 9.91-9.91C21.93 6.45 17.5 2 12.04 2zm5.77 14.06c-.24.68-1.4 1.31-1.94 1.39-.5.08-1.13.11-1.82-.11-.42-.13-.96-.3-1.65-.6-2.9-1.25-4.79-4.17-4.94-4.36-.14-.2-1.19-1.58-1.19-3.01 0-1.43.75-2.13 1.02-2.42.26-.29.58-.36.77-.36h.55c.18 0 .42-.03.65.5.24.55.81 1.9.88 2.04.07.14.11.3.02.49-.09.19-.14.3-.28.46-.14.16-.29.36-.42.48-.14.13-.28.28-.12.55.16.28.71 1.18 1.53 1.91 1.05.94 1.94 1.24 2.21 1.38.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.18-.28.36-.23.61-.14.24.09 1.58.75 1.85.88.28.14.46.2.53.32.07.11.07.65-.17 1.33z"/></svg>
+  </span>
+</a>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <img src="" alt="" id="lightboxImg">
+</div>
+
+<script>
+  // Menu mobile
+  const burger = document.getElementById('burgerBtn');
+  const navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+  // Marquee hero (imagens duplicadas para loop infinito)
+  const marqueeImgs = [
+    'img/IMG-20260821-WA0161.jpg',
+    'img/IMG-20260821-WA0154.jpg',
+    'img/IMG-20260821-WA0148.jpg',
+    'img/IMG-20260821-WA0153.jpg',
+    'img/IMG-20260821-WA0162.jpg',
+    'img/IMG-20260821-WA0147.jpg'
+  ];
+  const track = document.getElementById('marqueeTrack');
+  [...marqueeImgs, ...marqueeImgs].forEach(src => {
+    const img = document.createElement('img');
+    img.src = src; img.alt = '';
+    track.appendChild(img);
+  });
+
+  // Ticker de texto
+  const tickerText = ['ATÉ 18X NO BOLETO', 'SEM CONSULTA SPC/SERASA', 'MARABÁ E REGIÃO', 'ATENDIMENTO 24 HORAS'];
+  const tickerTrack = document.getElementById('tickerTrack');
+  for (let r = 0; r < 2; r++){
+    tickerText.forEach(t => {
+      const span = document.createElement('span');
+      span.innerHTML = t + ' <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="opacity:.6"><circle cx="12" cy="12" r="5"/></svg>';
+      tickerTrack.appendChild(span);
+    });
+  }
+  // duplicate whole set again for seamless loop
+  tickerTrack.innerHTML += tickerTrack.innerHTML;
+
+  // Galeria
+  const galleryImgs = [
+    {src:'img/real c85.webp', alt:'realme C85 5G — resistência à água IP69 Pro', wide:true},
+    {src:'img/realme-c85-pro-review-techjuice-202771-122418-940x705.jpg', alt:'realme C85 5G, cor preta'},
+    {src:'img/c85.jpg', alt:'realme C85 5G, cores azul e preto'},
+    {src:'img/realme 3.jpeg', alt:'realme P4 Lite, Roxo Pulse'},
+    {src:'img/realme 2.jpeg', alt:'realme 16'},
+    {src:'img/cinza e roxo.webp', alt:'realme P4 Lite, bateria 6600 mAh', wide:true},
+    {src:'img/pamela.jpeg', alt:'realme C100x, resistência a impactos'},
+    {src:'img/realme-c100x-sale.jpg', alt:'realme C100x, bateria 8000 mAh'},
+    {src:'img/realme 1.jpeg', alt:'realme 16, toque preciso na chuva'}
+    
+  ];
+  const grid = document.getElementById('galleryGrid');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  galleryImgs.forEach(g => {
+    const btn = document.createElement('button');
+    if (g.wide) btn.className = 'g-wide';
+    const img = document.createElement('img');
+    img.src = g.src; img.alt = g.alt; img.loading = 'lazy';
+    btn.appendChild(img);
+    btn.addEventListener('click', () => {
+      lightboxImg.src = g.src;
+      lightboxImg.alt = g.alt;
+      lightbox.classList.add('open');
+    });
+    grid.appendChild(btn);
+  });
+  document.getElementById('lightboxClose').addEventListener('click', () => lightbox.classList.remove('open'));
+  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) lightbox.classList.remove('open'); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') lightbox.classList.remove('open'); });
+
+  // Reveal on scroll
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting){
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
+      }
+    });
+  }, {threshold:0.15});
+  revealEls.forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
